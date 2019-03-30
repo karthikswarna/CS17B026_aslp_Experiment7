@@ -1,21 +1,21 @@
 # MIPS program to calculate Factorial(n).
-		.data
-n:		.word	8
+	.data
+n:	.word	8
 fact:	.word	0:2
-		.text
+	.text
 
 main:
     lw $a0, n
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	jal factorial
+    addi $sp, $sp, -4
+    sw $ra, 0($sp)
+    jal factorial
 
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
+    lw $ra, 0($sp)
+    addi $sp, $sp, 4
     la $t0, fact
-	sw $v0, 4($t0)
+    sw $v0, 4($t0)
     sw $v1, 0($t0)
-	jr $ra
+    jr $ra
 .end main
 
 factorial:
