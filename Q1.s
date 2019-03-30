@@ -1,13 +1,13 @@
 # MIPS program to implement procedures.
-		.data
-k:		.word	2
-l:		.word	5
-m:		.word	36
-n:		.word	2
+	.data
+k:	.word	2
+l:	.word	5
+m:	.word	36
+n:	.word	2
 result:	.word	0
 error:	.asciiz	"Overflow occured. Enter valid integers"
 
-		.text	
+	.text	
 main:
 	lw $s0, k
 	lw $s1, n
