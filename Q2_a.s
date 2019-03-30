@@ -1,8 +1,8 @@
 # MIPS program to calculate nth Fibonacci number.
-		.data
-n:		.word	9
+	.data
+n:	.word	9
 num:	.word	0
-		.text
+	.text
 
 main:
 	lw $a0, n
